@@ -85,9 +85,20 @@ openssl pkeyutl -decrypt -inkey private.key -in cypher.txt -out decrypted.txt
 
 ![openssl version](image.png)
 
-Создание ключа.
+Создание приватного и публичного ключа.
 
-![ssh key](image-1.png)
+![ssh keys](image-2.png)
+
+При шифровке текстового файла возникла ошибка: *размер входных данных больше, чем допускает RSA-ключ с выбранной схемой паддинга.* Пришлось сократить текст.
+
+![text](image-1.png)
 
 
 </details>
+
+Результат:
+ * [`public.key`](Task1/public.key);
+ * [`private.key`](Task1/private.key);
+ * Passphrase содержится в коментарии к решению;
+ * Зашифрованный файл [`cypher.txt`](Task1/cypher.txt)
+
